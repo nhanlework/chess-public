@@ -1,9 +1,50 @@
 {
-  "$comment": "Set a piece to an object to use a GLB model instead of the built-in procedural character. See README.md.",
-  "p": null,
+  "$comment": "Set a piece to an object to use a GLB model instead of the built-in procedural character. See README.md. Models are only used while the \"Use GLB models\" option in 3D Settings is on.",
+  "p": {
+    "file": "knight_pawn/knight_pawn_white_v2.glb",
+    "perTeam": {
+      "w": { "file": "knight_pawn/knight_pawn_white_v2.glb" },
+      "b": { "file": "knight_pawn/knight_pawn_black_v2.glb" }
+    },
+    "height": 0.85,
+    "rotationY": 0,
+    "yOffset": 0,
+    "tint": false,
+    "animations": {
+      "idle": "Knight_Idle",
+      "walk": "Knight_Walk",
+      "attack": "Knight_StepThrust",
+      "hit": "Knight_Hit",
+      "death": "Knight_Death"
+    },
+    "impactAt": 0.34,
+    "walkSpeed": 0.4
+  },
   "n": null,
   "b": null,
   "r": null,
-  "q": null,
+  "q": {
+    "file": "queen/queen_white_v2.glb",
+    "perTeam": {
+      "w": { "file": "queen/queen_white_v2.glb" },
+      "b": { "file": "queen/queen_black_v2.glb" }
+    },
+    "height": 1.0,
+    "rotationY": 0,
+    "yOffset": 0,
+    "tint": false,
+    "animations": {
+      "idle": "Queen_Idle",
+      "walk": "Queen_Walk",
+      "attack": "Queen_Attack",
+      "hit": "Queen_Hit",
+      "death": "Queen_Death",
+      "victory": "Queen_Victory"
+    },
+    "impactAt": 0.41,
+    "walkSpeed": 0.6,
+    "walkMaxClip": 1.5,
+    "attackOrigin": { "up": 0.84, "forward": 0.3, "side": 0.14 }
+  },
   "k": null
 }
